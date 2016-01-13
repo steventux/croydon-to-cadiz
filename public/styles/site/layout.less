@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "logo-font";
+  src: url("FerroRosso.ttf");
+}
+
+#header {
+	margin-top: 12px;
+
+  .navigation {
+    display: block;
+    vertical-align: top;
+    .navbar-right{
+      margin-right: 0px;
+    }
+  }
+}
+
+.logo {
+  height: 280px;
+  background: url("/images/croydon-to-cadiz.png") 1em 1em no-repeat;
+  h1 {
+    padding: 12px;
+    color: #ff9;
+    font-family: "logo-font", monospace, sans-serif;
+    font-size: 56px;
+    a {
+      color: #ff9;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .logo {
+    background: url("/images/croydon-to-cadiz-620.png") 1em 1em no-repeat;
+  }
+  .google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+  }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+#footer {
+	margin-top: 30px;
+	border-top: 1px solid #eeeeee;
+	padding-top: 30px;
+	color: #777777;
+}
+
+.gallery-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
